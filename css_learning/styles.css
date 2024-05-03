@@ -9,7 +9,15 @@ li {
   list-style-type: "- ";
 }
 
-.special {
+/* .special {
+  color: orange;
+  font-weight: bold;
+} */
+li.special {
+  color: orange;
+  font-weight: bold;
+}
+span.special {
   color: orange;
   font-weight: bold;
 }
