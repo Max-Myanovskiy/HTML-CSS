@@ -21,3 +21,18 @@ span.special {
   color: orange;
   font-weight: bold;
 }
+li em {
+  color: rebeccapurple;
+}
+h1 + p {
+  font-size: 200%;
+}
+a:link {
+  color: chartreuse;
+}
+a:visited {
+  color: rgb(239, 6, 247);
+}
+a:hover {
+  text-decoration: none;
+}
