@@ -1,10 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after,
+*:hover,
+*:visited,
+*:link,
+*:first-child,
+*::first-line {
+  box-sizing: inherit;
+}
 h1 {
   color: red;
 }
-p,
+/* p,
 li {
   color: green;
-}
+} */
 li {
   list-style-type: "- ";
 }
@@ -63,3 +77,28 @@ a:hover {
     background-color: blue;
   }
 } */
+article p:first-child::first-line {
+  font-size: 120%;
+  font-weight: bold;
+}
+.box3::before {
+  content: "This should show before the other content. ";
+}
+.box3::after {
+  content: " ➥";
+}
+.box4::before {
+  content: "Content in the box in my HTML page.";
+  display: block;
+  width: auto;
+  height: fit-content;
+  background-color: rebeccapurple;
+  border: 1px solid black;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0em;
+  padding-left: 20px;
+  padding-right: 5px;
+}
