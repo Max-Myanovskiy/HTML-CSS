@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CSS tables example</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      .wrapper {
+        width: 90%;
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+      }
+
+      .col {
+        background: rgb(178, 102, 255);
+        padding: 5px;
+      }
+
+      .span5 {
+        grid-column: auto / span 5;
+      }
+
+      .span10 {
+        grid-column: auto / span 10;
+      }
+
+      .content {
+        grid-column: 1 / 6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+      <div class="col">4</div>
+      <div class="col">5</div>
+      <div class="col">6</div>
+      <div class="col">7</div>
+      <div class="col">8</div>
+      <div class="col">9</div>
+      <div class="col">10</div>
+      <div class="col">11</div>
+      <div class="col">12</div>
+      <div class="col">13</div>
+      <div class="col">14</div>
+      <div class="col">15</div>
+      <div class="col">16</div>
+      <div class="col">17</div>
+      <div class="col">18</div>
+      <div class="col">19</div>
+      <div class="col">20</div>
+      <div class="col span10">21</div>
+      <div class="col span5">22</div>
+      <div class="col span5">23</div>
+    </div>
+  </body>
+</html>
