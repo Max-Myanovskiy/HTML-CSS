@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Media Queries: a simple mobile first design, step 1</title>
+    <title>
+      Media Queries: a simple mobile first design, adding a grid component
+    </title>
     <style>
       * {
         box-sizing: border-box;
@@ -41,6 +43,10 @@
         background-color: rgb(207 232 220 / 70%);
       }
 
+      .content {
+        margin-bottom: 1em;
+      }
+
       .related {
         background-color: rgb(79 185 227 / 30%);
         border: 1px solid rgb(79 185 227);
@@ -54,6 +60,20 @@
 
       article {
         margin-bottom: 1em;
+      }
+
+      .grid {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+
+      .grid li {
+        border: 1px solid #666;
+        padding: 10px;
       }
 
       @media screen and (min-width: 40em) {
@@ -120,25 +140,44 @@
               zucchini.
             </p>
 
-            <p>
-              Turnip greens yarrow ricebean rutabaga endive cauliflower sea
-              lettuce kohlrabi amaranth water spinach avocado daikon napa
-              cabbage asparagus winter purslane kale. Celery potato scallion
-              desert raisin horseradish spinach carrot soko. Lotus root water
-              spinach fennel kombu maize bamboo shoot green bean swiss chard
-              seakale pumpkin onion chickpea gram corn pea. Brussels sprout
-              coriander water chestnut gourd swiss chard wakame kohlrabi
-              beetroot carrot watercress. Corn amaranth salsify bunya nuts nori
-              azuki bean chickweed potato bell pepper artichoke.
-            </p>
-
-            <p>
-              Nori grape silver beet broccoli kombu beet greens fava bean potato
-              quandong celery. Bunya nuts black-eyed pea prairie turnip leek
-              lentil turnip greens parsnip. Sea lettuce lettuce water chestnut
-              eggplant winter purslane fennel azuki bean earthnut pea sierra
-              leone bologi leek soko chicory celtuce parsley jícama salsify.
-            </p>
+            <ul class="grid">
+              <li>
+                <h2>Card 1</h2>
+                <p>
+                  Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                  lettuce kohlrabi amaranth water spinach avocado daikon napa
+                  cabbage asparagus winter purslane kale.
+                </p>
+              </li>
+              <li>
+                <h2>Card 2</h2>
+                <p>
+                  Celery potato scallion desert raisin horseradish spinach
+                  carrot soko.
+                </p>
+              </li>
+              <li>
+                <h2>Card 3</h2>
+                <p>
+                  Lotus root water spinach fennel kombu maize bamboo shoot green
+                  bean swiss chard seakale pumpkin onion chickpea gram corn pea.
+                </p>
+              </li>
+              <li>
+                <h2>Card 4</h2>
+                <p>
+                  Brussels sprout coriander water chestnut gourd swiss chard
+                  wakame kohlrabi beetroot carrot watercress.
+                </p>
+              </li>
+              <li>
+                <h2>Card 5</h2>
+                <p>
+                  Corn amaranth salsify bunya nuts nori azuki bean chickweed
+                  potato bell pepper artichoke.
+                </p>
+              </li>
+            </ul>
           </div>
           <aside class="related">
             <p>
